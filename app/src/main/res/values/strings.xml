@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TimelineExample</string>
+    <string name="post_title">Write your thought...</string>
+    <string name="post_status">STATUS</string>
+    <string name="post_photo">PHOTO</string>
+    <string name="post_video">VIDEO</string>
+    <string name="post_location">LOCATION</string>
+    <string name="post_checkin">CHECK IN</string>
+    <string name="john_doe">John Doe</string>
+    <string name="title_post_location">Post Location</string>
+    <string name="title_timeline_listing">Timeline Listing(Simple)</string>
+    <string name="action_post">POST</string>
+    <string name="action_next">NEXT</string>
+    <string name="wrn_map_not_installed">Google Map application is not installed!</string>
+</resources>

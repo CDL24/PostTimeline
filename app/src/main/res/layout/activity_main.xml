@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clouds"
+    android:paddingLeft="@dimen/_3sdp"
+    android:paddingRight="@dimen/_3sdp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+
+        <include
+            android:id="@+id/include_timeline"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            layout="@layout/include_post_timeline" />
+    </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NO POST IN TIMELINE!"
+        android:id="@+id/text_no_data_found"
+        android:visibility="invisible"
+        android:layout_gravity="center" />
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"/>-->
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+</FrameLayout>

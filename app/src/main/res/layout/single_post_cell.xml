@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:src="@drawable/ic_user_avtar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.TitleName"
+            android:text="John Doe"
+            android:id="@+id/text_user_name"
+            android:padding="@dimen/_4sdp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_toEndOf="@+id/imageView"
+            android:lines="1"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.MySubheader"
+            android:text="Today, 8:04 AM"
+            android:fontFamily="sans-serif-thin"
+            android:id="@+id/text_post_time"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:gravity="right" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Your description here..."
+            android:id="@+id/text_post_desc"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/_5sdp"
+            android:maxLines="4"
+            android:minLines="1"
+            android:ellipsize="end"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_image_media"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_below="@+id/text_post_desc"
+            android:layout_alignParentStart="true"
+            android:minHeight="@dimen/_150sdp"
+            android:maxHeight="@dimen/_350sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/image_post_like"
+            android:src="@drawable/ic_like"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_below="@+id/post_image_media"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_below="@+id/post_image_media"
+            android:id="@+id/text_post_like_count"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/image_post_like"
+            android:padding="5dp" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/image_post_reply"
+            android:layout_below="@+id/post_image_media"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/ic_reply"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp" />
+
+        <ProgressBar
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/progress_loader_timeline"
+            android:layout_alignTop="@+id/post_image_media"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
